@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Dictionary />
+        <Dictionary keyword="sunset" />
         <footer>
           <a href="https://github.com/msleeuwenhoek/react-dictionary">
             Open-source code
