@@ -1,7 +1,44 @@
+.Dictionary h1 {
+  font-weight: 600;
+  text-align: center;
+}
+
 .Dictionary form {
   text-align: center;
 }
 
 .Dictionary input {
   margin-inline: 1em;
+}
+
+.Results .word {
+  font-weight: 600;
+}
+
+.Meaning {
+  margin: 1.5em 0;
+}
+.Meaning .speech-part {
+  color: #1ab2a8;
+  font-weight: 700;
+}
+
+.Meaning .definition {
+  margin: 0.5em 0;
+}
+
+.Meaning .example {
+  opacity: 0.7;
+}
+
+.Synonyms {
+  margin: 0;
+  padding: 0;
+}
+.Synonyms li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 1em 0.5em 0;
+  color: #1ab2a8;
+  font-weight: 600;
 }

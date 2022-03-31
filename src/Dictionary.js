@@ -35,6 +35,7 @@ export default function Dictionary(props) {
     console.log(definition);
     return (
       <div className="Dictionary">
+        <h1>Define</h1>
         <form onSubmit={handleSubmit}>
           <input type="search" onChange={SetSearchInput} />
           <input type="submit" value="Search" />
