@@ -35,12 +35,16 @@ export default function Dictionary(props) {
     console.log(definition);
     return (
       <div className="Dictionary">
-        <h1>Define</h1>
-        <form onSubmit={handleSubmit}>
-          <input type="search" onChange={SetSearchInput} />
-          <input type="submit" value="Search" />
-        </form>
-        <Results definition={definition} />{" "}
+        <div className="header">
+          <h1>Define</h1>
+          <form onSubmit={handleSubmit}>
+            <input type="search" onChange={SetSearchInput} />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <div className="results-container">
+          <Results definition={definition} />{" "}
+        </div>
       </div>
     );
   } else {
