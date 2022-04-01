@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Dictionary.css";
 import Results from "./Results";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.keyword);
@@ -36,7 +38,9 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <div className="header">
-          <h1>Define</h1>
+          <h1>
+            <FontAwesomeIcon icon={faBook} /> Define
+          </h1>
           <form onSubmit={handleSubmit}>
             <input type="search" onChange={SetSearchInput} />
             <input type="submit" value="Search" />
