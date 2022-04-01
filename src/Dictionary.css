@@ -1,12 +1,15 @@
 .Dictionary .header {
   background-color: #1ab2a8;
   text-align: center;
-  padding-block: 1rem;
+  padding: 1rem;
   color: white;
 }
 .Dictionary h1 {
   padding: 1rem;
   font-weight: 600;
+}
+.Dictionary form {
+  padding: 1rem;
 }
 
 .Dictionary input {
@@ -21,6 +24,7 @@
   color: white;
   background: none;
   border: none;
+  font-size: 1.8rem;
 }
 .results-container {
   max-width: 800px;
@@ -71,8 +75,8 @@
   padding: 1rem;
 }
 
-.Meaning .definition {
-  margin: 0.5rem 0;
+.Meaning .Definition {
+  margin: 0.8rem 0;
 }
 
 .Meaning .example {
@@ -81,7 +85,7 @@
 
 .Synonyms {
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
 }
 .Synonyms li {
   display: inline-block;

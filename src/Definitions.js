@@ -12,7 +12,7 @@ export default function Definitions(props) {
       {props.props.definition[0].meanings[props.index].definitions.map(
         function (definition, index) {
           return (
-            <div key={index}>
+            <div key={index} className="Definition">
               {index + 1}. {definition.definition}
               <div>{setExample(definition)}</div>
             </div>

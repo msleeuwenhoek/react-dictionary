@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Definitions from "./Definitions";
 import Phonetic from "./Phonetic";
 import Audio from "./Audio";
+import Synonyms from "./Synonyms";
 
 export default function Results(props) {
   const [activeMeaningIndex, setActiveMeaningIndex] = useState(0);
-
+  console.log(props);
   if (props.definition) {
     return (
       <div className="Results">
@@ -30,6 +31,7 @@ export default function Results(props) {
             })}
           </div>
         </div>
+
         <div className="Meaning">
           <div className="speech-part-selector">
             {props.definition[0].meanings.map(function (meaning, index) {
@@ -60,9 +62,9 @@ export default function Results(props) {
               }
             })}
           </div>
-          <div>
-            <Definitions props={props} index={activeMeaningIndex} />
-          </div>
+
+          <Definitions props={props} index={activeMeaningIndex} />
+          <Synonyms props={props} index={activeMeaningIndex} />
         </div>
       </div>
     );
