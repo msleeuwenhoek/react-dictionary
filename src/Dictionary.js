@@ -34,7 +34,6 @@ export default function Dictionary(props) {
     setKeyword(event.target.value);
   }
   if (loaded) {
-    console.log(definition);
     return (
       <div className="Dictionary">
         <div className="header">
