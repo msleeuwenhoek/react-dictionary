@@ -1,12 +1,12 @@
 import React from "react";
 
 export default function Phonetic(props) {
+  const audio = new Audio(props.phonetic.audio);
+  function playAudio() {
+    audio.play();
+  }
   if (props.phonetic) {
-    return (
-      <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-        Listen
-      </a>
-    );
+    return <button onClick={playAudio}>hi</button>;
   } else {
     return null;
   }
