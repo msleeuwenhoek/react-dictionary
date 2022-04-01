@@ -1,4 +1,5 @@
 import React from "react";
+import "./Synonyms.css";
 
 //return synonyms of the active/displayed meaning
 export default function Synonyms(props) {

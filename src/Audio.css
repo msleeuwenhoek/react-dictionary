@@ -1,0 +1,12 @@
+.audio .audio-icon {
+  margin-inline: 0.6rem;
+  font-size: 2rem;
+  color: #1ab2a8;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.audio .audio-icon:hover {
+  color: #158982;
+  transform: scale(1.1);
+}

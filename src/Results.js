@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Results.css";
 import Definitions from "./Definitions";
 import Phonetics from "./Phonetics";
 import Audio from "./Audio";
@@ -6,15 +7,14 @@ import Synonyms from "./Synonyms";
 
 export default function Results(props) {
   const [activeMeaningIndex, setActiveMeaningIndex] = useState(0);
-  console.log(props);
+
   if (props.definition) {
     return (
       <div className="Results">
         <div className="keyword-section">
           <h2 className=" word text-capitalize">{props.definition[0].word}</h2>
 
-          <Phonetics props={props} />
-          <div className="audio">
+          <span className="audio">
             {props.definition[0].phonetics.map(function (phonetic, index) {
               return (
                 <span key={index}>
@@ -22,7 +22,8 @@ export default function Results(props) {
                 </span>
               );
             })}
-          </div>
+          </span>
+          <Phonetics props={props} />
         </div>
 
         <div className="Meaning">

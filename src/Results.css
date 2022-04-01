@@ -1,0 +1,65 @@
+.Results {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Results .keyword-section {
+  text-align: center;
+}
+.Results .word {
+  font-weight: 600;
+  display: inline;
+}
+
+.Meaning .active {
+  position: relative;
+  color: #158982;
+}
+
+.Meaning .active::after {
+  content: "";
+  width: 100%;
+  height: 0.15em;
+  border-radius: 0.1em;
+  background-color: #1ab2a8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: active-speech-part 350ms ease-in;
+  transition: 300ms;
+}
+
+.Meaning .speech-part-selector {
+  margin-bottom: 1.5rem;
+}
+.Meaning .speech-part {
+  color: #1ab2a8;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline;
+  margin: 1rem 1rem 1rem 0;
+  transition: 250ms;
+}
+
+.Meaning .speech-part:hover {
+  color: #158982;
+}
+
+.Meaning .Definition {
+  margin: 0.8rem 0;
+}
+
+.Meaning .example {
+  opacity: 0.7;
+}
+
+@keyframes active-speech-part {
+  0% {
+    transform: scale(0);
+    transform-origin: left;
+  }
+  90% {
+    transform-origin: left;
+  }
+}

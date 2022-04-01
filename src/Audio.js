@@ -1,4 +1,5 @@
 import React from "react";
+import "./Audio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 

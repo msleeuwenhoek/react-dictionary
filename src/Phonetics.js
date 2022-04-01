@@ -1,6 +1,7 @@
 import React from "react";
+import "./Phonetics.css";
 
-export default function Phonetic(props) {
+export default function Phonetics(props) {
   return (
     <ul className="phonetics">
       {props.props.definition[0].phonetics.map(function (phonetic, index) {

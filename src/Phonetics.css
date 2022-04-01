@@ -1,0 +1,9 @@
+.phonetics {
+  margin: 0;
+  padding: 1em;
+}
+.phonetics li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 1rem 0.5rem 0;
+}

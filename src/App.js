@@ -4,13 +4,13 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <Dictionary keyword="sunset" />
-      <footer>
+      <Dictionary keyword="hello" />
+      <div className="credits">
         <a href="https://github.com/msleeuwenhoek/react-dictionary">
           Open-source code
         </a>{" "}
         by Merel Sleeuwenhoek
-      </footer>
+      </div>
     </div>
   );
 }
