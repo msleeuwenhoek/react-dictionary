@@ -1,5 +1,6 @@
 import React from "react";
 
+//return synonyms of the active/displayed meaning
 export default function Synonyms(props) {
   return (
     <ul className="Synonyms">

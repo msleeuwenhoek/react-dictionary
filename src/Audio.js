@@ -7,7 +7,7 @@ export default function Phonetic(props) {
   function playAudio() {
     audio.play();
   }
-  if (props.phonetic) {
+  if (props.phonetic.audio !== "") {
     return (
       <FontAwesomeIcon
         icon={faCirclePlay}

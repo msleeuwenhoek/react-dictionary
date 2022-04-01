@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Definitions from "./Definitions";
-import Phonetic from "./Phonetic";
+import Phonetics from "./Phonetics";
 import Audio from "./Audio";
 import Synonyms from "./Synonyms";
 
@@ -12,15 +12,8 @@ export default function Results(props) {
       <div className="Results">
         <div className="keyword-section">
           <h2 className=" word text-capitalize">{props.definition[0].word}</h2>
-          <ul className="phonetics">
-            {props.definition[0].phonetics.map(function (phonetic, index) {
-              return (
-                <li key={index}>
-                  <Phonetic phonetic={phonetic} />
-                </li>
-              );
-            })}
-          </ul>
+
+          <Phonetics props={props} />
           <div className="audio">
             {props.definition[0].phonetics.map(function (phonetic, index) {
               return (
