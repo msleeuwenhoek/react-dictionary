@@ -1,6 +1,8 @@
 .Dictionary .header {
   background-color: #1ab2a8;
   text-align: center;
+  padding-block: 1rem;
+  color: white;
 }
 .Dictionary h1 {
   padding: 1rem;
@@ -9,6 +11,16 @@
 
 .Dictionary input {
   margin-inline: 1rem;
+  max-width: 7000px;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+}
+
+.Dictionary .search-button {
+  color: white;
+  background: none;
+  border: none;
 }
 .results-container {
   max-width: 800px;
@@ -37,6 +49,7 @@
   margin-inline: 0.6rem;
   font-size: 2rem;
   color: #1ab2a8;
+  cursor: pointer;
 }
 
 .Meaning {

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import Results from "./Results";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.keyword);
@@ -41,9 +41,12 @@ export default function Dictionary(props) {
           <h1>
             <FontAwesomeIcon icon={faBook} /> Define
           </h1>
+          <h4>Get the definition of any word:</h4>
           <form onSubmit={handleSubmit}>
             <input type="search" onChange={SetSearchInput} />
-            <input type="submit" value="Search" />
+            <button type="submit" className="search-button">
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
           </form>
         </div>
         <div className="results-container">
